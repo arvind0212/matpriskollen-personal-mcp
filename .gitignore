@@ -1,0 +1,32 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build and package output
+build/
+dist/
+*.egg-info/
+
+# Local configuration, data, and artifacts
+.env
+.env.*
+!.env.example
+artifacts/
+data/
+outputs/
+logs/
+*.log
+
+# Private working material
+PRIVATE*
+*RELEASE-CHECKLIST*
+plans/
+reports/
+transcripts/

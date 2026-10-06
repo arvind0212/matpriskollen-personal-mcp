@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "matpriskollen-personal-mcp"
+version = "0.1.0"
+description = "Unofficial read-only, allowlisted Matpriskollen public-page MCP"
+requires-python = ">=3.12"
+dependencies = ["mcp==2.2.0"]
+
+[project.scripts]
+matpriskollen-mcp = "matpriskollen_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/matpriskollen_mcp"]
